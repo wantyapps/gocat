@@ -27,7 +27,7 @@ func main() {
 		fmt.Println(unmErr)
 	}
 
-	logfile, err := os.Create(homeDirectory + config.LogfileDir + config.LogfileName)
+	logfile, err := os.Create(homeDirectory + "/" + config.LogfileDir + config.LogfileName)
 	if err != nil {
 		fmt.Println(err)
 	}
